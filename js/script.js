@@ -20,16 +20,23 @@ function createSquare(val) {
   square.innerText = val;
   square.idElement = val;
   console.log(square);
-  square.addEventListener('click', function() {
+  square.addEventListener('click', clickSquare) 
     console.log(this.idElement);
-  });
+    container.append(square);
+  };
 
-  container.append(square);
-}
+
 
 console.log(numElements);
 
 
 for (let i = 0; i < numElements; i++) {
   createSquare(i + 1);
+}
+
+
+//colore al click
+function clickSquare() {
+  this.classList.add(`celeste`)
+  console.log(`ho cliccato:`);
 }

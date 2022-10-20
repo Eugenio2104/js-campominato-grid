@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  background-color: aqua;
+  background-color: black;
+  color: white;
 }
 
 .main-wrapper{
@@ -29,4 +30,9 @@ body{
   width: calc(100% / 10);
   height: calc(100% / 10); 
   border: 2px solid white;
+  cursor: pointer;
+}
+
+.celeste{
+  background-color: aqua;
 }
