@@ -18,15 +18,18 @@ function createSquare(val) {
   const square = document.createElement(`div`)
   square.className = `square`;
   square.innerText = val;
+  square.idElement = val;
+  console.log(square);
+  square.addEventListener('click', function() {
+    console.log(this.idElement);
+  });
+
   container.append(square);
 }
 
 console.log(numElements);
 
+
 for (let i = 0; i < numElements; i++) {
   createSquare(i + 1);
 }
-
-
-
-
