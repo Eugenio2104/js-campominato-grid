@@ -20,7 +20,7 @@ function createSquare(val) {
   square.innerText = val;
   square.idElement = val;
   console.log(square);
-  square.addEventListener('click', clickSquare) 
+  square.addEventListener('click', clickSquare);
     console.log(this.idElement);
     container.append(square);
   };
